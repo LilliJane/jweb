@@ -5,7 +5,7 @@ angular.module('jwebApp')
         $stateProvider
             .state('news', {
                 parent: 'entity',
-                url: '/newss',
+                url: '/news',
                 data: {
                     authorities: ['ROLE_USER'],
                     pageTitle: 'jwebApp.news.home.title'
