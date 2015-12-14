@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <button class="btn btn-primary" ui-sref="product.new">
+                <button has-authority="ROLE_ADMIN" class="btn btn-primary" ui-sref="product.new">
                     <span class="glyphicon glyphicon-flash"></span> <span translate="jwebApp.product.home.createLabel">Create a new Product</span>
                 </button>
             </div>
@@ -15,7 +15,7 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th><span translate="global.field.id">ID</span></th>
+                    <th has-authority="ROLE_ADMIN"><span translate="global.field.id">ID</span></th>
                     <th><span translate="jwebApp.product.name">Name</span></th>
                     <th><span translate="jwebApp.product.price">Price</span></th>
                     <th><span translate="jwebApp.product.description">Description</span></th>
@@ -24,7 +24,7 @@
             </thead>
             <tbody>
                 <tr ng-repeat="product in products track by product.id">
-                    <td><a ui-sref="product.detail({id:product.id})">{{product.id}}</a></td>
+                    <td has-authority="ROLE_ADMIN"><a ui-sref="product.detail({id:product.id})">{{product.id}}</a></td>
                     <td>{{product.name}}</td>
                     <td>{{product.price}}</td>
                     <td>{{product.description}}</td>
@@ -34,12 +34,12 @@
                                 class="btn btn-info btn-sm">
                             <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
                         </button>
-                        <button type="submit"
+                        <button has-authority="ROLE_ADMIN" type="submit"
                                 ui-sref="product.edit({id:product.id})"
                                 class="btn btn-primary btn-sm">
                             <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
                         </button>
-                        <button type="submit"
+                        <button has-authority="ROLE_ADMIN" type="submit"
                                 ui-sref="product.delete({id:product.id})"
                                 class="btn btn-danger btn-sm">
                             <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
