@@ -13,4 +13,12 @@ angular.module('jwebApp')
         });
         $scope.$on('$destroy', unsubscribe);
 
+        $scope.getTotal = function(){
+            var total = 0;
+            for(var i = 0; i < $scope.cart.products.length; i++){
+                var product = $scope.cart.products[i];
+                total += (product.price);
+            }
+            return total;
+        }
     });
