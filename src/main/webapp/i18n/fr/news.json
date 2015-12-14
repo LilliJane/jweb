@@ -1,0 +1,24 @@
+{
+    "jwebApp": {
+        "news" : {
+            "home": {
+                "title": "News",
+                "createLabel": "Créer une News",
+                "createOrEditLabel": "Créer ou éditer une News"
+            },
+            "created": "Une News a été créé avec l'identifiant {{ param }}",
+            "updated": "La News avec l'identifiant {{ param }} a été mise à jour",
+            "deleted": "La News avec l'identifiant {{ param }} a été supprimée",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer la News {{ id }} ?"
+            },
+            "detail": {
+                "title": "News"
+            },
+            "title": "Titre",
+            "content": "Contenu",
+            "date": "Date"
+        }
+    }
+}
+

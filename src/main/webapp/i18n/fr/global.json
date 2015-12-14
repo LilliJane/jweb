@@ -10,6 +10,8 @@
                 "product": "Product",
                 "categories": "Catégories",
                 "cart": "Cart",
+                "news": "News",
+                "editor": "Editeur News",
                 "jhipster-needle-004": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

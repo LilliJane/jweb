@@ -1,0 +1,23 @@
+{
+    "jwebApp": {
+        "news" : {
+            "home": {
+                "title": "News",
+                "createLabel": "Create a News",
+                "createOrEditLabel": "Create or edit a News"
+            },
+            "created": "A News is created with identifier {{ param }}",
+            "updated": "A News is updated with identifier {{ param }}",
+            "deleted": "A News is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete News {{ id }}?"
+            },
+            "detail": {
+                "title": "News"
+            },
+            "title": "Title",
+            "content": "Content",
+            "date": "Date"
+        }
+    }
+}

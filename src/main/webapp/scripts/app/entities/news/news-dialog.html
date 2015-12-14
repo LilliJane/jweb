@@ -1,0 +1,56 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myNewsLabel" translate="jwebApp.news.home.createOrEditLabel">Create or edit a News</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="news.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="jwebApp.news.title" for="field_title">Title</label>
+            <input type="text" class="form-control" name="title" id="field_title"
+                    ng-model="news.title"
+                    required />
+            <div ng-show="editForm.title.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.title.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="jwebApp.news.content" for="field_content">Content</label>
+            <input type="text" class="form-control" name="content" id="field_content"
+                    ng-model="news.content"
+                    required />
+            <div ng-show="editForm.content.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.content.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="jwebApp.news.date" for="field_date">Date</label>
+            <input type="date" class="form-control" name="date" id="field_date"
+                    ng-model="news.date"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>
