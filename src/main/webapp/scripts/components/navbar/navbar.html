@@ -17,13 +17,21 @@
                         <span class="hidden-sm" translate="global.menu.home">Home</span>
                     </a>
                 </li>
+
+                <li ui-sref-active="active" ng-switch-when="true" >
+                    <a ui-sref="cart" data-toggle="collapse" data-target=".navbar-collapse.in">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        <span class="hidden-sm" translate="global.menu.entities.cart">Cart</span>
+                    </a>
+                </li>
+
                 <!-- jhipster-needle-001 - JHipster will add new menu items here -->
                 <li ui-sref-active="active" ng-switch-when="true" class="dropdown pointer">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="">
                         <span>
                             <span class="glyphicon glyphicon-th-list"></span>
-                            <span class="hidden-sm" translate="global.menu.entities.main">
-                                Entities
+                            <span class="hidden-sm" translate="global.menu.entities.categories">
+                                Categories
                             </span>
                             <b class="caret"></b>
                         </span>
@@ -31,8 +39,6 @@
                     <ul class="dropdown-menu">
                         <li ui-sref-active="active" ><a ui-sref="product" data-toggle="collapse" data-target=".navbar-collapse.in"><span class="glyphicon glyphicon-asterisk"></span>
                         &#xA0;<span translate="global.menu.entities.product">product</span></a></li>
-                        <li ui-sref-active="active" ><a ui-sref="cart" data-toggle="collapse" data-target=".navbar-collapse.in"><span class="glyphicon glyphicon-asterisk"></span>
-                        &#xA0;<span translate="global.menu.entities.cart">cart</span></a></li>
                         <!-- jhipster-needle-002 - JHipster will add entities to the menu here -->
                     </ul>
                 </li>
