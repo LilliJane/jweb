@@ -1,0 +1,24 @@
+﻿ Admin :
+      - Accueil : Affichage des news, possibilité d'en rajouter
+      - Produits : affichage de tous les produits avec noms / minitatures / prix / ref / quantité restante
+      - Description produit : nom / prix / description / photo / quantité restante / bouton réapprovisionner / bouton supprimer / référence
+      - Users : id + nom de tous les users
+      - Modale user : id / toutes les infos d'un user / vue panier
+
+User :
+      - Accueil : Affichage des news
+      - Produits : affichage de tous les produits avec noms / minitatures / prix / ref
+      - Description produit : nom / prix / description / photo / référence / ajouter au panier (avec quantité)
+      - panier : description panier
+      - se connecter / settings
+
+So we have to :
+   - change home page
+   - set new authorisations
+   - create product card
+   - create product description card
+   - create newsletter
+   - remove id field in product description
+   - user shouldn't see all carts, just the one he is filling
+   - user could see his carts history but how can we filter carts by user id ?
+   - don't forget to check i18n files

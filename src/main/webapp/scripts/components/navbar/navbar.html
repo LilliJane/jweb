@@ -25,7 +25,7 @@
                     </a>
                 </li>
 
-                <li ng-class="{active: $state.includes('admin')}" ui-sref-active="active" ng-switch-when="true" >
+                <li ng-class="{active: $state.includes('admin')}" has-authority="ROLE_ADMIN" ui-sref-active="active" ng-switch-when="true" >
                     <a ui-sref="news" data-toggle="collapse" data-target=".navbar-collapse.in">
                         <span class="glyphicon glyphicon-pencil"></span>
                         <span class="hidden-sm" translate="global.menu.entities.editor">News Editor</span>
