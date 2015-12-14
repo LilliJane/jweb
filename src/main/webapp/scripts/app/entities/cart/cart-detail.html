@@ -1,0 +1,40 @@
+
+<div>
+    <h2><span translate="jwebApp.cart.detail.title">Cart</span> {{cart.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="jwebApp.cart.user">user</span>
+                </td>
+                <td>
+                    {{cart.user.login}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="jwebApp.cart.product">product</span>
+                </td>
+                <td>
+                    <span ng-repeat="product in cart.products">
+                        <a class="form-control-static" ui-sref="product.detail({id: {{product.id}}})">{{product.name}}</a>{{$last ? '' : ', '}}
+                    <span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

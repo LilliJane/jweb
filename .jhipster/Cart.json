@@ -1,0 +1,24 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "product",
+            "otherEntityName": "product",
+            "relationshipType": "many-to-many",
+            "otherEntityField": "name",
+            "ownerSide": true
+        }
+    ],
+    "fields": [],
+    "changelogDate": "20151214141449",
+    "dto": "no",
+    "service": "no",
+    "pagination": "no"
+}

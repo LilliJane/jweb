@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "baseName": "jweb",
+    "packageName": "eu.epitech.jweb",
+    "packageFolder": "eu/epitech/jweb",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "no",
+    "useSass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "enableTranslation": true,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "22896907bcb6080bed72523db202bc791963585e",
+    "testFrameworks": [
+      "gatling"
+    ]
+  }
+}
